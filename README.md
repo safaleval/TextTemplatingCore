@@ -17,7 +17,7 @@ The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in 
 ## How to use
 
 ### As a command line tool
-## install locally using nuget package
+## Install locally using nuget package
 ```
 dotnet tool install TextTemplating.Tool
 ```
@@ -47,7 +47,6 @@ To transform templates at runtime, you can also use the `Engine` class.
 
 *Sample is work in progres*
 
-### As a service (Not Implemented)
 
 # License
 MIT
