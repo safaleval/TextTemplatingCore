@@ -1,8 +1,8 @@
 {
   "version": 1,
   "isRoot": true,
-  "tools": {
-    "texttemplatigtoolsnet": {
+  "tools": {    
+    "texttemplating.tool": {
       "version": "5.0.0",
       "commands": [
         "t4"

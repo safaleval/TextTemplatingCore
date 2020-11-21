@@ -5,9 +5,7 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <AssemblyName>TextTemplating</AssemblyName>
     <PackageId>TextTemplating</PackageId>
-    <PackageTags>T4 TextTemplating netcore</PackageTags>
-    <PackageProjectUrl>https://github.com/Jacknq/TextTemplatingCore</PackageProjectUrl>
-    <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageTags>T4 TextTemplating netcore</PackageTags>    
     <Version>5.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
