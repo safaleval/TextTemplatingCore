@@ -44,7 +44,7 @@ Add the same packages mentioned above, then you can run `dotnet t4 trans -f Pers
 
 Note: You can use all the packages that you have installed into your project when writing T4 template, so there may be no necessary to use "assembly" directive to reference assembly via assembly name(so I skipped these feature, you can also reference assembly via path).
 
-## As runtime tool you can call - that generate csharp class from tt file 
+## As tool you can call dynamically at runtime - that generate csharp class from tt template 
 ```
 dotnet t4 proc -f person.tt 
 ```
