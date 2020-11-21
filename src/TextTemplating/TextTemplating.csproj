@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Description>T4 scaffolding for .NET Core without IDE</Description>
     <Authors>Jacknq</Authors>
-    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
     <AssemblyName>TextTemplating</AssemblyName>
     <PackageId>TextTemplating</PackageId>
     <PackageTags>T4 TextTemplating netcore</PackageTags>    
