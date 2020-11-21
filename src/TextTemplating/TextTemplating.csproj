@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>T4 scaffolding for .NET Core 2.0 without Visual Studio</Description>
-    <Authors>Tibor Tóth, Zeeko Zhu</Authors>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Description>T4 scaffolding for .NET Core without Visual Studio</Description>
+    <Authors>Jacknq</Authors>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <AssemblyName>TextTemplating</AssemblyName>
     <PackageId>TextTemplating</PackageId>
-    <PackageTags>T4 TextTemplating aspnetcore</PackageTags>
-    <PackageProjectUrl>https://github.com/totht91/TextTemplating</PackageProjectUrl>
+    <PackageTags>T4 TextTemplating netcore</PackageTags>
+    <PackageProjectUrl>https://github.com/Jacknq/TextTemplatingCore</PackageProjectUrl>
     <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
-    <Version>2.2.1-alpha1</Version>
+    <Version>5.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
