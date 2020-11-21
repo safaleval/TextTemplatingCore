@@ -3,13 +3,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Version>5.0</Version>
     <Authors>Jacknq</Authors>
-    <Description>T4 scaffolding for .NET Core without IDE, command line tool and designtime transformation tool, T4 support for .net 5 and .net core 3.1+, 
-    transform .tt files from your command line without any dependencies, based on roslyn, no 3rdparty dependencies
+    <Description>T4 scaffolding for .NET Core without IDE, T4 support for .net 5 and .net core 3.1+, 
+    transform .tt files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
     usage: "dotnet t4 -h"</Description>
     <OutputType>Exe</OutputType>
     <PackageId>TextTemplating.Tool</PackageId>
     <PackageProjectUrl>https://github.com/Jacknq/TextTemplatingCore</PackageProjectUrl>
-    <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageLicense>http://www.opensource.org/licenses/MIT</PackageLicense>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>t4</ToolCommandName>
