@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>T4 scaffolding for .NET Core without Visual Studio</Description>
+    <Description>T4 scaffolding for .NET Core without IDE</Description>
     <Authors>Jacknq</Authors>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <AssemblyName>TextTemplating</AssemblyName>
