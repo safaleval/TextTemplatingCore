@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System.Linq;
+using System;
 
 namespace DesignTimeSample
 {
@@ -18,6 +19,7 @@ namespace DesignTimeSample
             {
                 JsonConvert.SerializeObject(p);
             }
+            Console.WriteLine("Done");
         }
     }
 
