@@ -38,16 +38,16 @@ Now you can use the `dotnet t4` command as a command line tool to transform temp
 
 Run `dotnet t4 -h` to see the usage.
 
-Example:
-```Batchfile
-dotnet t4 proc -f DbBase.tt
-```
 
 ### As a design time tool
 Add the same packages mentioned above, then you can run `dotnet t4 trans -f Person.tt` to transform a text template.
 
 Note: You can use all the packages that you have installed into your project when writing T4 template, so there may be no necessary to use "assembly" directive to reference assembly via assembly name(so I skipped these feature, you can also reference assembly via path).
 
+## As runtime tool you can call - that generate csharp class from tt file 
+```
+dotnet t4 proc -f person.tt 
+```
 
 ### As a library
 To transform templates at runtime, you can also use the `Engine` class.
