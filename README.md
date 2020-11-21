@@ -57,7 +57,6 @@ To transform templates at runtime, you can also use the `Engine` class.
 *Sample is work in progres*
 
 ### As a service (Not Implemented)
-*Work in progres*
 
 # License
 MIT
