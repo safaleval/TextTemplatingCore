@@ -7,7 +7,7 @@ dotnet new tool-manifest
 dotnet tool install TextTemplating.Tool
 ## install globally using nuget package
 dotnet tool install --global TextTemplating.Tool
-## install using relative path to folder with nuget package
+## install locally using relative path to folder with nuget package
 dotnet tool install --add-source ./../../src/Texttemplating.cli/nupkg TextTemplating.Tool
 
 ### use the tool
