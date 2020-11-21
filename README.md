@@ -16,29 +16,15 @@ The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in 
 
 ## How to use
 
-### Add myget source
-
-Add Nuget.Config File to your solution root with content below:
-```
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <packageSources>
-    <add key="NuGet.org" value="https://nuget.org/api/v3/" />
-    <add key="ZeekoGet" value="https://www.myget.org/F/zeekoget/api/v3/index.json" />
-  </packageSources>
-</configuration>
-```
-
 ### As a command line tool
-Add the following to  `YourProject.csproj`.
+## install locally using nuget package
+```
+dotnet tool install TextTemplating.Tool
+```
 
-```xml
-<ItemGroup>
-    <PackageReference Include="TextTemplating" Version="2.1.0-alpha1" />
-</ItemGroup>
-<ItemGroup>
-    <DotNetCliToolReference Include="TextTemplating.Tools" Version="2.1.0-alpha1" />
-</ItemGroup>
+## Install globally in .net cli
+```
+dotnet tool install --global TextTemplating.Tool
 ```
 
 Now you can use the `dotnet t4` command as a command line tool to transform templates at design-time, with the specified command line arguments.
