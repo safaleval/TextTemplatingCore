@@ -3,6 +3,11 @@
 T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
 Compatible with .NET 5 & .NET Core 3.1
 
+### usage 
+```
+dotnet t4 trans -f Person.tt
+```
+
 ## Goal
 This project's goal is to bring the old T4 text templating code generating approach to the new .NET Core projects.
 
