@@ -1,12 +1,13 @@
 # TextTemplating
 
-[中文说明](README.CHS.md)
+T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
+Compatible with .NET 5 & .NET Core 3.1
 
 ## Goal
-This project's goal is to bring the old T4 text templating code generating approach to the new ASP.NET Core 2.0 projects.
+This project's goal is to bring the old T4 text templating code generating approach to the new .NET Core projects.
 
 ### Update 
-The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in desing time, but this repo is maybe still useful who wants to process T4 templates in a dotnet core(netstandard2.0) project outside IDE (eg. in Linux or macOS with Visual Studio Code)
+The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in desing time, but this repo is maybe still useful who wants to process T4 templates in a dotnet core  project outside IDE (eg. in Linux or macOS with Visual Studio Code -> VSCODE)
 
 ## How to use
 
