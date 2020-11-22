@@ -12,7 +12,7 @@ dotnet tt trans -f Person.tt
 T4 scaffolding for .NET Core without IDE.
 Command line tool and designtime transformation tool,
 T4 support for .net 5 and .net core 3.1+, transform .tt files from your command line.
-Based on roslyn, no 3rdparty dependencies.
+Based on roslyn, no mono or 3rdparty dependencies.
 
 ### Update 
 The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in desing time, but this repo is maybe still useful who wants to process T4 templates in a dotnet core  project outside IDE (eg. in Linux or macOS with Visual Studio Code -> VSCODE)
