@@ -6,4 +6,7 @@ dotnet build
 ### how to create .net cli tool 
 [https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create)
 
-dotnet nuget push ./nupkg/TextTemplating.Tool.5.0.0.nupkg --source https://api.nuget.org/v3/index.json
+### pack with dependencies, build doesnt do it correcly!
+dotnet pack
+### push to nuget and add your api key 
+dotnet nuget push ./nupkg/TextTemplating.Tool.5.0.1.3.nupkg --source https://api.nuget.org/v3/index.json

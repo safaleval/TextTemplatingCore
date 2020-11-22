@@ -3,9 +3,9 @@
   "isRoot": true,
   "tools": {
     "texttemplating.tool": {
-      "version": "5.0.0",
+      "version": "5.0.1.3",
       "commands": [
-        "t4"
+        "tt"
       ]
     }
   }
