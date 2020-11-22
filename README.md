@@ -2,7 +2,7 @@
 
 T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
 Compatible with **.NET 5 & .NET Core 3.1**
-
+https://www.nuget.org/packages/TextTemplating.Tool/
 ### usage 
 ```
 dotnet t4 trans -f Person.tt
