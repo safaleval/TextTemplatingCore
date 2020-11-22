@@ -2,7 +2,7 @@
 
 T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
 Compatible with **.NET 5 & .NET Core 3.1**
-
+https://www.nuget.org/packages/TextTemplating.Tool/
 ### usage 
 ```
 dotnet t4 trans -f Person.tt
@@ -20,16 +20,16 @@ The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in 
 ## How to use
 
 ### As a command line tool
-## create manifest file
+### create manifest file
 ```
 dotnet new tool-manifest
 ```
-## Install locally using nuget package
+### Install locally using nuget package
 ```
 dotnet tool install TextTemplating.Tool
 ```
 
-## Install globally in .net cli
+### Install globally in .net cli
 ```
 dotnet tool install --global TextTemplating.Tool
 ```
@@ -44,7 +44,7 @@ Add the same packages mentioned above, then you can run `dotnet t4 trans -f Pers
 
 Note: You can use all the packages that you have installed into your project when writing T4 template, so there may be no necessary to use "assembly" directive to reference assembly via assembly name(so I skipped these feature, you can also reference assembly via path).
 
-## As tool you can call dynamically at runtime - that generate csharp class from tt template 
+### As tool you can call dynamically at runtime - that generate csharp class from tt template 
 ```
 dotnet t4 proc -f person.tt 
 ```
