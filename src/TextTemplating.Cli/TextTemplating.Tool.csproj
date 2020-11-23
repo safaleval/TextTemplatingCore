@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
-    <Version>5.0.1.5</Version>
+    <Version>5.0.1.6</Version>
     <Authors>Jacknq</Authors>
     <Description>T4 scaffolding for .NET Core without IDE, T4 support for .net 5 and .net core 3.1+, 
     transform .tt files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
@@ -16,14 +16,14 @@
     <ToolCommandName>tt</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <PreserveCompilationContext>true</PreserveCompilationContext>
-   
+   <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
    
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\*" />
   </ItemGroup>
   <ItemGroup>
-  <PackageReference Include="ilmerge" Version="3.0.41" />
+
   <PackageReference Include="TextTemplating.Core" Version="5.0.0.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="3.8.0" />
     <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
@@ -37,11 +37,8 @@
      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </ProjectReference>
 
+
   </ItemGroup>
-  <Target Name="ILMerge">
-    <!-- the ILMergePath property points to the location of ILMerge.exe console application -->
-    <Exec Command="$(ILMergeConsolePath)  /out:myapp.dll Bin\debug\netcoreapp3.1\TexTemplating.Tool.dll Bin\debug\netcoreapp3.1\TexTemplating.Tool.dll" />
-  </Target>
 
   
 </Project>
