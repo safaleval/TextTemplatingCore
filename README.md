@@ -24,12 +24,12 @@ The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in 
 ```
 dotnet new tool-manifest
 ```
-### Install locally using nuget package
+### Install locally
 ```
 dotnet tool install TextTemplating.Tool
 ```
 
-### Install globally in .net cli
+### Install globally 
 ```
 dotnet tool install --global TextTemplating.Tool
 ```
