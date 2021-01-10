@@ -9,7 +9,7 @@ namespace DesignTimeSample
         public static void Main()
         {
             var people = Enumerable.Range(0, 5).Select(num =>
-                new Person
+                new DPerson
                 {
                     Name = "Mr " + num,
                     Age = num + 20
@@ -19,11 +19,12 @@ namespace DesignTimeSample
             {
                 JsonConvert.SerializeObject(p);
             }
+            Console.WriteLine(new Person().TransformText());
             Console.WriteLine("Done");
         }
     }
 
-    public class Person
+    public class DPerson
     {
         public string Name { get; set; }
         public int Age { get; set; }

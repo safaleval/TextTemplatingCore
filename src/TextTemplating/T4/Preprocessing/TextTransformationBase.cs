@@ -7,7 +7,7 @@ using TextTemplating.Infrastructure;
 
 namespace TextTemplating.T4.Preprocessing
 {
-    public abstract class TextTransformationBase
+    public  class TextTransformationBase
     {
         public StringBuilder GenerationEnvironment { get; } = new StringBuilder();
         public string CurrentIndent => _currentIndent;
@@ -41,11 +41,11 @@ namespace TextTemplating.T4.Preprocessing
 
         public void Write(string textToAppend)
         {
-            // 消除混乱的换行然后顺便在换行处插入缩进
+            // clear new lines
             Regex lineEndings = new Regex(@"\r\n|\n|\r");
             textToAppend = lineEndings.Replace(textToAppend, Environment.NewLine + _currentIndent);
 
-            // 从新行开始插入的时候先插入缩进
+            // indent new line
             if (_endWithNewLine)
             {
                 GenerationEnvironment.Append(_currentIndent);
@@ -74,6 +74,6 @@ namespace TextTemplating.T4.Preprocessing
 
         public ITextTemplatingEngineHost Host { get; set; }
 
-        public abstract string TransformText();
+        public virtual   string TransformText(){return "";}
     }
 }

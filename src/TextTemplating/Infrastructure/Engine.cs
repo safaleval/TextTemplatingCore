@@ -18,12 +18,12 @@ namespace TextTemplating.Infrastructure
 
         // todo add to cli tool
         /// <summary>
-        /// 将 T4 模板转换成 cs 代码
+        /// convert tt template to c# code
         /// </summary>
-        /// <param name="content">模板内容</param>
-        /// <param name="className">生成的 cs 代码类名</param>
-        /// <param name="classNamespace">生成的 cs 代码名称空间名</param>
-        /// <returns>cs 代码内容及其引用的 Reference</returns>
+        /// <param name="content">tt template</param>
+        /// <param name="className">cs class</param>
+        /// <param name="classNamespace">cs namespace</param>
+        /// <returns>cs cs code with references</returns>
         public PreprocessResult PreprocessT4Template(string content, string className, string classNamespace)
         {
             var result = new Parser(_host).Parse(content);
@@ -40,9 +40,9 @@ namespace TextTemplating.Infrastructure
         }
 
         /// <summary>
-        /// 运行 T4 模板，输出模板执行结果
+        /// run t4 template
         /// </summary>
-        /// <param name="content">模板内容</param>
+        /// <param name="content">tt template</param>
         /// <returns></returns>
         public string ProcessT4Template(string content)
         {
@@ -57,7 +57,8 @@ namespace TextTemplating.Infrastructure
             
 
             var transformationType = transformationAssembly.GetType(classNamespace + "." + className);
-            var transformation = (TextTransformationBase)Activator.CreateInstance(transformationType);
+            
+            var transformation = Activator.CreateInstance(transformationType) as TextTransformationBase;//(TextTransformationBase)
 
             transformation.Host = _host;
             return transformation.TransformText();

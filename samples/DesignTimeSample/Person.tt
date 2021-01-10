@@ -5,7 +5,7 @@
 
 [<#
 var people = Enumerable.Range(0, 5).Select(num =>
-    new Person
+    new DPerson
     {
         Name = "Mr " + num,
         Age = num + 20
