@@ -11,7 +11,7 @@ https://www.nuget.org/packages/TextTemplating.Tool/
 
 
 ### Why the hell, what do i do with t4?
-Generate any text, template, **any** code **any** language, **any** script from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
+Generate **any** text, template, code **any** language, **any** script from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
 
 ### Usage 
 transform template on the fly
