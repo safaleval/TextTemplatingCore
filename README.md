@@ -38,7 +38,7 @@ Add nuget package
 ```xml
 <PackageReference Include="TextTemplating.Core" Version="5.0.0" /> 
 ```
-Now you can use the `dotnet tt` command as a command line tool to transform templates at design-time, with the specified command line arguments.
+Now you can use the `dotnet tt` command as a command line tool locally or just call `tt` globally to transform templates at design-time, with the specified command line arguments.
 ## How to Use
 Run `dotnet tt -h` to see the usage.
 
