@@ -9,6 +9,10 @@ https://www.nuget.org/packages/TextTemplating.Tool/
 
 .NET 3 sdk intorduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
 
+
+### Why the hell, what do i do with t4?
+Generate any text, template, **any** code **any** language, **any** script from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
+
 ### Usage 
 transform template on the fly
 ```
