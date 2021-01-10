@@ -4,8 +4,11 @@
 
 T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
 Compatible with **.NET 5 & .NET Core 3.1**
+
 https://www.nuget.org/packages/TextTemplating.Tool/
-.NET 3 sdk intorduced (.NET tool - cmd line utilites for .net)[https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools] 
+
+.NET 3 sdk intorduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
+
 ### Usage 
 transform template on the fly
 ```
