@@ -1,9 +1,20 @@
-# TextTemplating
+# TextTemplating .NET tool
+
+
 
 T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
 Compatible with **.NET 5 & .NET Core 3.1**
+
 https://www.nuget.org/packages/TextTemplating.Tool/
-### usage 
+
+.NET 3 sdk intorduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
+
+
+### Why the hell, what do i do with t4?
+Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
+
+### Usage 
+transform template on the fly
 ```
 dotnet tt trans -f Person.tt
 ```
@@ -37,7 +48,7 @@ Add nuget package
 ```xml
 <PackageReference Include="TextTemplating.Core" Version="5.0.0" /> 
 ```
-Now you can use the `dotnet tt` command as a command line tool to transform templates at design-time, with the specified command line arguments.
+Now you can use the `dotnet tt` command as a command line tool locally or just call `tt` globally to transform templates at design-time, with the specified command line arguments.
 ## How to Use
 Run `dotnet tt -h` to see the usage.
 
