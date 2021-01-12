@@ -1,0 +1,11 @@
+{
+    "scripts": {       
+        "task-pull": "git pull",
+        "ttask-commit": "git commit -a -m \"$refact\" && git push",
+        "task-committg": "TortoiseGitProc.exe -command commit -logmsg 'refact'",
+        "ttask-update": "svn update",
+        "tttask-commit": "TortoiseProc.exe /command:commit /path:.",
+        "task-dotnet": "dotnet run"
+        
+      }
+}
