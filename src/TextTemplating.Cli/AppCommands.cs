@@ -68,12 +68,12 @@ namespace TextTemplating.Tools
             });
         }
         /// <summary>
-        /// 转换模板
+        /// conversion template
         /// </summary>
-        /// <param name="file">模板文件绝对路径</param>
-        /// <param name="outPut">输出路径</param>
-        /// <param name="className">生成的类名</param>
-        /// <param name="namespaceName">生成的名称空间名</param>
+        /// <param name="file">file</param>
+        /// <param name="outPut">ouput</param>
+        /// <param name="className">class name</param>
+        /// <param name="namespaceName">namespace</param>
         /// <returns></returns>
         static int PreprocessTemplate(string file, string outPut, string className, string namespaceName)
         {
