@@ -107,9 +107,22 @@ namespace TextTemplating.Tools
                 resolver.ReadProject(projectFile);
 
                 return TransformTemplate(filePath);
-
-
             });
+        }
+
+        public static int ProcessTTFile(string path)
+        {
+            var filePath = Path.Combine(Environment.CurrentDirectory, path);
+            if (TryFindProjectFile(filePath, out string projectFile) == false)
+            {
+                throw new ProjectNotFoundException("Current work directory is not in a project directory");
+            }
+
+            // Resolve metadata
+            var resolver = Program.DI.GetService<IMetadataResolveable>();
+            resolver.ReadProject(projectFile);
+
+            return TransformTemplate(filePath);
         }
 
         static int TransformTemplate(string filePath)
