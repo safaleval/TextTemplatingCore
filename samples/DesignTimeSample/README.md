@@ -11,7 +11,7 @@ dotnet tool install --global TextTemplating.Tool
 dotnet tool install --add-source ./../../src/Texttemplating.cli/nupkg TextTemplating.Tool
 
 ### use the tool
-dotnet t4 -h
-dotnet t4 trans -f Person.tt
-dotnet t4 trans -f Crud.tt  
+dotnet tt -h
+dotnet tt trans -f Person.tt
+dotnet tt trans -f Crud.tt  
 ## awesome
