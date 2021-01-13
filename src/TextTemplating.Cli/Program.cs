@@ -31,7 +31,7 @@ namespace TextTemplating.Tools
 
             var process = app.Command("proc", AppCommands.ProcessCommand);
             var transform = app.Command("trans", AppCommands.TransformCommand);
-            // var file = app.Argument("tt", "Path to CSX/tt script");
+            
             app.HelpOption(helpTemplate);
             try
             {
