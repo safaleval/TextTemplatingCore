@@ -31,20 +31,18 @@ namespace TextTemplating.Tools
 
             var process = app.Command("proc", AppCommands.ProcessCommand);
             var transform = app.Command("trans", AppCommands.TransformCommand);
-            
+
             app.HelpOption(helpTemplate);
             try
             {
-                bool tt = isSuppFile(args[0], "tt");
-                bool csx = isSuppFile(args[0], "csx");
-                if (args.Length == 1
-                && (tt || csx))
+                if (args.Length == 1)
                 {
-                    Console.WriteLine("executing file:" + args[0]);
-                    if (tt) { AppCommands.ProcessTTFile(args[0]); }
+                    return ProcessFile(args);
                 }
-                //else check commands
-                return app.Execute(args);
+                else
+                {//else check commands
+                    return app.Execute(args);
+                }
             }
             catch (CommandParsingException e)
             {
@@ -64,6 +62,19 @@ namespace TextTemplating.Tools
 
                 return 1;
             }
+        }
+
+        private static int ProcessFile(string[] args)
+        {
+            bool tt = isSuppFile(args[0], "tt");
+            bool csx = isSuppFile(args[0], "csx");
+            if (args.Length == 1
+            && (tt || csx))
+            {
+                Console.WriteLine("try to execute file: " + args[0]);
+                if (tt) { return AppCommands.ProcessTTFile(args[0]); }
+            }
+            return 0;
         }
 
         static bool isSuppFile(string s, string type)
