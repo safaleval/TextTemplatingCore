@@ -23,11 +23,40 @@ namespace TextTemplating.Infrastructure
         /// <summary>
         /// Share reference with project
         /// </summary>
-        public IList<string> StandardAssemblyReferences { get; } = new List<string>();
+        public IList<string> StandardAssemblyReferences { get; } = new List<string>()
+        {
+            "mscorlib",
+           // "netstandard",
+            "System",
+            "System.Core",
+            "System.Linq",
+            "System.Linq.Queryable",
+            "System.Linq.Expressions",
+             "System.Linq.Parallel",
+             "System.Data",
+             "System.Data.DataSetExtensions",
+             "System.Runtime",
+            "System.Dynamic",
+            "System.Runtime"
+            ,"System.Reflection"
+           //   "DesignTimeSample" //wil be ot found
+           //   "TextTemplating.Core" //works but creates dependency
+            
+        };
 
         public IList<string> StandardImports { get; } = new List<string>
         {
             "System",
+            "System.Linq",
+            "System.Linq.Expressions",
+            "System.IO",
+            "System.Collections.Generic",
+            "System.Console",
+            "System.Diagnostics",
+            "System.Dynamic",
+            "System.Console",
+            "System.Text",
+            "System.Threading.Tasks",
             "TextTemplating",
             "TextTemplating.Infrastructure",
             "TextTemplating.T4.Parsing",
@@ -62,6 +91,6 @@ namespace TextTemplating.Infrastructure
             return Path.Combine(Path.GetDirectoryName(TemplateFilePath), path);
         }
 
-        
+
     }
 }

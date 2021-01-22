@@ -17,9 +17,9 @@ namespace DesignTimeSample
             );
             foreach (var p in people)
             {
-                JsonConvert.SerializeObject(p);
+                JsonConvert.SerializeObject(p);            
             }
-            Console.WriteLine(new Person().TransformText());
+          // Console.WriteLine(new Person().TransformText());
             Console.WriteLine("Done");
         }
     }

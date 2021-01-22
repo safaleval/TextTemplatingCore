@@ -12,12 +12,12 @@ namespace TextTemplating.Test.ParserTests
         public IList<string> StandardAssemblyReferences { get; } = new List<string>
         {
             "mscorlib",
-            "TextTemplating"
+            "TextTemplating.Core"
         };
         public IList<string> StandardImports { get; } = new List<string>
         {
             "System",
-            "TextTemplating",
+         //   "TextTemplating",
             "TextTemplating.Infrastructure",
             "TextTemplating.T4.Parsing",
             "TextTemplating.T4.Preprocessing"

@@ -67,6 +67,9 @@ namespace TextTemplating.Tools
                 return PreprocessTemplate(filePath, outputPath, className, namespaceName);
             });
         }
+
+      
+
         /// <summary>
         /// conversion template
         /// </summary>
@@ -108,8 +111,22 @@ namespace TextTemplating.Tools
 
                 return TransformTemplate(filePath);
             });
+        }      
+
+        static int TransformTemplate(string filePath)
+        {
+            var engin = Program.DI.GetService<Engine>();
+            var templateContent = File.ReadAllText(filePath);
+            var result = engin.ProcessT4Template(templateContent);
+            var host = Program.DI.GetService<ITextTemplatingEngineHost>();
+            var outputPath = Path.Combine(
+                Path.GetDirectoryName(filePath),
+                $"{Path.GetFileNameWithoutExtension(filePath)}{host.FileExtension}");
+            File.WriteAllText(outputPath, result, host.Encoding);
+            return 0;
         }
 
+//new stuff
         public static int ProcessTTFile(string path)
         {
             var filePath = Path.Combine(Environment.CurrentDirectory, path);
@@ -125,17 +142,34 @@ namespace TextTemplating.Tools
             return TransformTemplate(filePath);
         }
 
-        static int TransformTemplate(string filePath)
-        {
+        public static int ProcessCSXFile(string path)
+        {  
             var engin = Program.DI.GetService<Engine>();
-            var templateContent = File.ReadAllText(filePath);
-            var result = engin.ProcessT4Template(templateContent);
+            var filePath2 = Path.Combine(Environment.CurrentDirectory, path);
+            var templateContent = File.ReadAllText(filePath2);
+           
+            if (TryFindProjectFile(filePath2, out string projectFile) == false)
+            {
+                throw new ProjectNotFoundException("Current work directory is not in a project directory");
+            }
             var host = Program.DI.GetService<ITextTemplatingEngineHost>();
-            var outputPath = Path.Combine(
-                Path.GetDirectoryName(filePath),
-                $"{Path.GetFileNameWithoutExtension(filePath)}{host.FileExtension}");
-            File.WriteAllText(outputPath, result, host.Encoding);
-            return 0;
+           // Console.WriteLine("proj>>"+projectFile);
+                // Resolve metadata
+            IMetadataResolveable resolver = Program.DI.GetService<IMetadataResolveable>();
+            ProjectMetadata projMetadata = resolver.ReadProject(projectFile);
+            //Console.WriteLine("proj.meta>>"+projMetadata.OutputPath);
+            
+            var scriptCode = File.ReadAllText(filePath2);
+            var result = engin.ProcessCSXTemplate(templateContent, filePath2, 
+            resolver, projMetadata);
+            
+            // var outputPath = Path.Combine(
+            //     Path.GetDirectoryName(filePath),
+            //     $"{Path.GetFileNameWithoutExtension(filePath)}{host.FileExtension}");
+            // File.WriteAllText(outputPath, result, host.Encoding);
+
+             
+           return 0;
         }
 
         #endregion

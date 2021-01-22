@@ -3,6 +3,7 @@ using System.IO;
 using Microsoft.Extensions.CommandLineUtils;
 using Microsoft.Extensions.DependencyInjection;
 using TextTemplating.Infrastructure;
+using TextTemplating;
 
 namespace TextTemplating.Tools
 {
@@ -68,11 +69,13 @@ namespace TextTemplating.Tools
         {
             bool tt = isSuppFile(args[0], "tt");
             bool csx = isSuppFile(args[0], "csx");
+            string f = args[0];
             if (args.Length == 1
             && (tt || csx))
             {
-                Console.WriteLine("try to execute file: " + args[0]);
-                if (tt) { return AppCommands.ProcessTTFile(args[0]); }
+                ttConsole.WriteNormal("Executing file: " + f);
+                if (tt) { return AppCommands.ProcessTTFile(f); }
+                if (csx) { return AppCommands.ProcessCSXFile(f); }
             }
             return 0;
         }

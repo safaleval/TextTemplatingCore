@@ -116,6 +116,8 @@ namespace TextTemplating.Tools
             var lines = File.ReadAllLines(referencesFile)
                 .Where(line => string.IsNullOrWhiteSpace(line) == false).ToList();
             lines.Add(Path.Combine(metadata.ProjectDir, metadata.OutputPath, metadata.TargetFileName));
+            
+            
             var metadataReferences = lines
                 .Select(path => MetadataReference.CreateFromFile(path) as MetadataReference)
                 .ToList();
@@ -125,8 +127,10 @@ namespace TextTemplating.Tools
             // load unreferenced assembly so that I can use them to run the compiled assembly
             AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
             {
+                
                 var name = new AssemblyName(args.Name).Name + ".dll";
                 var assemblyPath = lines.FirstOrDefault(path => path.IndexOf(name, StringComparison.Ordinal) >= 0);
+               // Console.WriteLine("loading:"+args.Name + " " + assemblyPath);
                 return assemblyPath == null ? null : Assembly.LoadFrom(assemblyPath);
             };
 
