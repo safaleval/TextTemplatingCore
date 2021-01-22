@@ -146,6 +146,8 @@ namespace TextTemplating.Tools
         {  
             var engin = Program.DI.GetService<Engine>();
             var filePath2 = Path.Combine(Environment.CurrentDirectory, path);
+            if(File.Exists(filePath2))
+            {
             var templateContent = File.ReadAllText(filePath2);
            
             if (TryFindProjectFile(filePath2, out string projectFile) == false)
@@ -167,7 +169,7 @@ namespace TextTemplating.Tools
             //     Path.GetDirectoryName(filePath),
             //     $"{Path.GetFileNameWithoutExtension(filePath)}{host.FileExtension}");
             // File.WriteAllText(outputPath, result, host.Encoding);
-
+            }
              
            return 0;
         }
