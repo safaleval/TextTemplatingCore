@@ -66,30 +66,33 @@ namespace TextTemplating.Tools
         }
 
         private static int ProcessFile(string[] args)
-        {
-            bool tt = isSuppFile(args[0], "tt");
-            bool csx = isSuppFile(args[0], "csx");
-            string f = args[0];
-            if (args.Length == 1
-            && (tt || csx))
-            {
+        {         
+            if (args.Length == 1 &&
+                isSuppFile(args[0], new[] {"tt","csx"}))
+            {   var f = args[0];
                 ttConsole.WriteNormal("Executing file: " + f);
-                if (tt) { return AppCommands.ProcessTTFile(f); }
-                if (csx) { return AppCommands.ProcessCSXFile(f); }
+                if (f.EndsWith(".tt")) { return AppCommands.ProcessTTFile(f); }
+                return AppCommands.ProcessCSXFile(f); 
             }
             return 0;
         }
 
-        static bool isSuppFile(string s, string type)
+        static bool isSuppFile(string s, string[] supptype)
         {
+            bool sup = false;
             if (!string.IsNullOrEmpty(s))
             {
-                var val = s.ToLower();
-                var tt = val.ToLower().EndsWith(type);
-                if (tt)
-                { return true; }
+                var val = s.ToLower();                
+                if(File.Exists( Path.Combine(Environment.CurrentDirectory, s)))
+                {
+                    foreach (var type in supptype)
+                    {
+                        if(val.ToLower().EndsWith(type))
+                        { return true; }
+                    }                
+                }
             }
-            return false;
+            return sup;
         }
     }
 }
