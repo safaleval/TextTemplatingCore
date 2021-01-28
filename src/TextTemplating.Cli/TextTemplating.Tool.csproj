@@ -5,7 +5,7 @@
     <Authors>Jacknq</Authors>
     <Description>T4 and CSharp script scaffolding for .NET Core without IDE, T4 support for .net 5 and .net core 3.1+, 
     transform .tt  and .csx files from your command line or runtime, based on roslyn, no 3rdparty dependencies. 
-    One of the very few tools that supports reflection and web projects!
+    One of the very few tools that supports custom namespace, nuget, reflection and web projects!
     usage: "dotnet tt -h"</Description>
     <PackageTags>T4;TextTemplating;Core;tt;csx;dotnet</PackageTags>
     <OutputType>Exe</OutputType>
