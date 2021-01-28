@@ -30,8 +30,8 @@ Scaffolding for .NET Core without IDE.
 Command line tool and designtime transformation tool,
 based on roslyn, no mono or 3rdparty dependencies.
 
-### Update 
-The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in desing time, but this repo is maybe still useful who wants to process T4 templates in a dotnet core  project outside IDE (eg. in Win, Linux or macOS with Visual Studio Code -> VSCODE)
+
+The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in desing time, but this repo is maybe still useful who wants to process templates in a dotnet core  project outside IDE (eg. in Win, Linux or macOS with Visual Studio Code -> VSCODE)
 
 ## How to install
 
