@@ -3,8 +3,8 @@
     <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
     <Version>5.0.1.16</Version>
     <Authors>Jacknq</Authors>
-    <Description>T4 scaffolding for .NET Core without IDE, T4 support for .net 5 and .net core 3.1+, 
-    transform .tt files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
+    <Description>T4 and CSharp script scaffolding for .NET Core without IDE, T4 support for .net 5 and .net core 3.1+, 
+    transform .tt  and csx files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
     usage: "dotnet tt -h"</Description>
     <PackageTags>T4;TextTemplating;Core;tt</PackageTags>
     <OutputType>Exe</OutputType>
