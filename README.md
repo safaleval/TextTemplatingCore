@@ -16,6 +16,10 @@ Generate **any** text, **any** code or script template, **any** language from yo
 ### Usage 
 transform template on the fly
 ```
+dotnet tt Person.tt
+
+ or 
+ 
 dotnet tt trans -f Person.tt
 ```
 
