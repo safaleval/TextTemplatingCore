@@ -2,7 +2,7 @@
 
 
 
-T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
+**T4**  and **CSX** scripts using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
 Compatible with **.NET 5 & .NET Core 3.1**
 
 https://www.nuget.org/packages/TextTemplating.Tool/
@@ -17,6 +17,7 @@ Generate **any** text, **any** code or script template, **any** language from yo
 transform template on the fly
 ```
 dotnet tt Person.tt
+dotnet tt hello.csx
 
  or 
  
