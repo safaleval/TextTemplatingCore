@@ -2,7 +2,8 @@
 
 
 
-T4 templates using .net cli command for design time .tt transformation and possibility to use engine class for runtime .tt transformation 
+**T4**  and **CSX** scripts using .net cli command for design time  transformation and possibility to use engine class for runtime .tt transformation.
+One of the very few tools that supports reflection and web projects!
 Compatible with **.NET 5 & .NET Core 3.1**
 
 https://www.nuget.org/packages/TextTemplating.Tool/
@@ -10,13 +11,14 @@ https://www.nuget.org/packages/TextTemplating.Tool/
 .NET Core 3 sdk introduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
 
 
-### Why the hell, what do i do with t4?
+### Why the hell, what do i do with T4 or CSX?
 Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
 
 ### Usage 
 transform template on the fly
 ```
 dotnet tt Person.tt
+dotnet tt hello.csx
 
  or 
  
@@ -24,13 +26,12 @@ dotnet tt trans -f Person.tt
 ```
 
 ## Goal
-T4 scaffolding for .NET Core without IDE.
+Scaffolding for .NET Core without IDE.
 Command line tool and designtime transformation tool,
-T4 support for .net 5 and .net core 3.1+, transform .tt files from your command line.
-Based on roslyn, no mono or 3rdparty dependencies.
+based on roslyn, no mono or 3rdparty dependencies.
 
-### Update 
-The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in desing time, but this repo is maybe still useful who wants to process T4 templates in a dotnet core  project outside IDE (eg. in Win, Linux or macOS with Visual Studio Code -> VSCODE)
+
+The Visual Studio 2017 and Xamarin Studio now supports to process *.tt files in desing time, but this repo is maybe still useful who wants to process templates in a dotnet core  project outside IDE (eg. in Win, Linux or macOS with Visual Studio Code -> VSCODE)
 
 ## How to install
 
