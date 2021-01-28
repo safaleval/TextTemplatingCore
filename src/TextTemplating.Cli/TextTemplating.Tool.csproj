@@ -4,9 +4,10 @@
     <Version>5.0.1.16</Version>
     <Authors>Jacknq</Authors>
     <Description>T4 and CSharp script scaffolding for .NET Core without IDE, T4 support for .net 5 and .net core 3.1+, 
-    transform .tt  and csx files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
+    transform .tt  and .csx files from your command line or runtime, based on roslyn, no 3rdparty dependencies. 
+    One of the few tools that supports reflection and web projects!
     usage: "dotnet tt -h"</Description>
-    <PackageTags>T4;TextTemplating;Core;tt</PackageTags>
+    <PackageTags>T4;TextTemplating;Core;tt;csx;dotnet</PackageTags>
     <OutputType>Exe</OutputType>
     <AssemblyName>TextTemplating.Tool</AssemblyName>
     <PackageId>TextTemplating.Tool</PackageId>
