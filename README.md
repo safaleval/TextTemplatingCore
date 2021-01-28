@@ -7,7 +7,7 @@ Compatible with **.NET 5 & .NET Core 3.1**
 
 https://www.nuget.org/packages/TextTemplating.Tool/
 
-.NET 3 sdk intorduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
+.NET Core 3 sdk introduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
 
 
 ### Why the hell, what do i do with t4?
@@ -16,6 +16,10 @@ Generate **any** text, **any** code or script template, **any** language from yo
 ### Usage 
 transform template on the fly
 ```
+dotnet tt Person.tt
+
+ or 
+ 
 dotnet tt trans -f Person.tt
 ```
 
