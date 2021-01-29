@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 	context.subscriptions.push(vscode.commands.registerCommand('tt.helloWorld',  (uri:vscode.Uri)  => {
 		const terminal = vscode.window.createTerminal(`TT #${NEXT_TERM_ID++}`);
-		terminal.sendText(`echo 'Sent text immediately after creating ${uri.fsPath}'`);
+		terminal.sendText(`dotnet tt '${uri.fsPath}'`);
 		terminal.show();
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('terminalTest.show', () => {
