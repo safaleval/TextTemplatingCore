@@ -4,7 +4,7 @@
 	"publisher": "jacknq",
 	"repository": "https://github.com/Jacknq/TextTemplatingCore",
 	"description": "T4 and CSX executions",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
