@@ -1,8 +1,10 @@
 {
 	"name": "TextTemplating",
 	"displayName": "texttemplating",
+	"publisher": "jacknq",
+	"repository": "https://github.com/Jacknq/TextTemplatingCore",
 	"description": "T4 and CSX executions",
-	"version": "0.0.1",
+	"version": "0.3.0",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
@@ -18,16 +20,16 @@
 			{
 				"command": "tt.helloWorld",
 				"title": "tt: Execute"
-				
 			}
-		],		
-			"menus": {
-					"explorer/context": [{
-						"when":  "resourceFilename =~ /(.*\\.csx)|(.*\\.tt)$/",
-						"command": "tt.helloWorld"
-					
-				  }]
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "resourceFilename =~ /(.*\\.csx)|(.*\\.tt)$/",
+					"command": "tt.helloWorld"
 				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
