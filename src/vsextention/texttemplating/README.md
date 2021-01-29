@@ -2,7 +2,7 @@
 
 **T4**  and **CSX** scripts using .net cli command for design time  transformation and possibility to use engine class for runtime .tt transformation.
 
-One of the very few tools that supports reflection and web projects!
+One of the very few tools that supports reflection and **web** projects!
 Compatible with **.NET 5 & .NET Core 3.1**  cs projects
 
 Scaffolding for .NET Core without IDE. Command line tool and designtime transformation tool, based on roslyn, no mono or 3rdparty dependencies.
@@ -19,7 +19,7 @@ dotnet tool install TextTemplating.Tool
 ```
 dotnet tool install --global TextTemplating.Tool
 ```
-Add nuget package
+Add nuget package to csproj, if used with cs project
 ```xml
 <PackageReference Include="TextTemplating.Core" Version="5.0.0" /> 
 ```
