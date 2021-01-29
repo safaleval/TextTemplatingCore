@@ -2,6 +2,8 @@
 
 **T4**  and **CSX** scripts using .net cli command for design time  transformation and possibility to use engine class for runtime .tt transformation.
 
+**Execute from context menu from VSCode!**
+
 One of the very few tools that supports reflection and **web** projects!
 Compatible with **.NET 5 & .NET Core 3.1**  cs projects
 
