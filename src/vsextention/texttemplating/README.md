@@ -60,9 +60,10 @@ This extension contributes the following settings:
 ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension. -->
+### DONATE HERE
+https://www.paypal.com/donate?hosted_button_id=RGHZAXSMKBSS4
 
-## Release Notes
- 
+## Release Notes 
  Github repo
  https://github.com/Jacknq/TextTemplatingCore
 
