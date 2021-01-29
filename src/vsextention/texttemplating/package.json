@@ -17,9 +17,17 @@
 		"commands": [
 			{
 				"command": "tt.helloWorld",
-				"title": "Hello World"
+				"title": "tt: Execute"
+				
 			}
-		]
+		],		
+			"menus": {
+					"explorer/context": [{
+						"when":  "resourceFilename =~ /(.*\\.csx)|(.*\\.tt)$/",
+						"command": "tt.helloWorld"
+					
+				  }]
+				}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
