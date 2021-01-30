@@ -3,8 +3,8 @@
 	"displayName": "texttemplating",
 	"publisher": "jacknq",
 	"repository": "https://github.com/Jacknq/TextTemplatingCore",
-	"description": "T4 and CSX executions",
-	"version": "0.14.0",
+	"description": "T4 and CSX (cs script) executions",
+	"version": "0.15.0",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
