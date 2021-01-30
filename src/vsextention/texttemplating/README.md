@@ -1,6 +1,6 @@
 # TextTemplating 
 
-**T4**  and **CSX** scripts using .net cli command for design time  transformation and possibility to use engine class for runtime .tt transformation.
+**T4**  and **CSX**  (C# script)  from vscode via .net cli command - design time  transformation and possibility to use engine class for runtime transformation.
 
 **Execute from context menu from VSCode!**
 
@@ -8,7 +8,9 @@ One of the very few tools that supports reflection and **web** projects!
 Compatible with **.NET 5 & .NET Core 3.1**  cs projects
 
 Scaffolding for .NET Core without IDE. Command line tool and designtime transformation tool, based on roslyn, no mono or 3rdparty dependencies.
- 
+
+### Support this project
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=RGHZAXSMKBSS4)
 
 ## Features
 
@@ -59,8 +61,8 @@ This extension contributes the following settings:
 ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension. -->
-### YOU CAN SUPPORT THIS PROJECT - DONATE HERE
-https://www.paypal.com/donate?hosted_button_id=RGHZAXSMKBSS4
+
+
 
 ## Release Notes 
  Github repo
