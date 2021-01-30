@@ -129,6 +129,7 @@ namespace TextTemplating.Tools
 //new stuff
         public static int ProcessTTFile(string path)
         {
+           // Console.WriteLine("ProcessTTFile");
             var filePath = Path.Combine(Environment.CurrentDirectory, path);
             if (TryFindProjectFile(filePath, out string projectFile) == false)
             {
