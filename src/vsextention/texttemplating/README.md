@@ -17,7 +17,7 @@ Generate **any** text, **any** code or script template, **any** language from yo
 ![features](https://raw.githubusercontent.com/Jacknq/TextTemplatingCore/master/src/vsextention/texttemplating/images/vscontextt.png)
 
 ## Requirements
- 1) Install .NET Core 3.1+ or higher  https://dotnet.microsoft.com/download/dotnet-core
+ 1) Install .NET Core SDK 3.1+ or higher  https://dotnet.microsoft.com/download/dotnet-core
  2) Install textemplating tool 
  ###### Install locally
 ```
