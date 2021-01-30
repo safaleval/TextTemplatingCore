@@ -1,3 +1,4 @@
+<#@ import namespace="System" #>
 <#@ import namespace="Newtonsoft.Json" #>
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="DesignTimeSample" #>

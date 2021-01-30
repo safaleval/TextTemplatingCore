@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-
+import * as path from 'path';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -18,12 +18,34 @@ export function activate(context: vscode.ExtensionContext) {
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from texttemplating!');
-		
+
 	});
-	context.subscriptions.push(vscode.commands.registerCommand('tt.helloWorld',  (uri:vscode.Uri)  => {
-		const terminal = vscode.window.createTerminal(`TT #${NEXT_TERM_ID++}`);
-		terminal.sendText(`dotnet tt '${uri.fsPath}'`);
-		terminal.show();
+	context.subscriptions.push(vscode.commands.registerCommand('tt.helloWorld', (uri: vscode.Uri) => {
+		
+		const terminals = <vscode.Terminal[]>(<any>vscode.window).terminals;
+		const items: TerminalQuickPickItem[] = terminals.map(t => {
+			return {
+				label: `${t.name}`,
+				terminal: t
+			};
+		});
+		const nname = `TT #${path.basename(uri.fsPath)}`;
+		var terminal:vscode.Terminal;
+			var f = items.find(v=>v.label ==nname );
+			if(f!=null)
+			{terminal = f.terminal;}
+			else{
+				terminal= vscode.window.createTerminal(
+					{
+						name: nname,
+						cwd: path.dirname(uri.fsPath)
+					});
+			}
+		//	`TT #${path.basename(uri.fsPath)}`,path.dirname(uri.fsPath), ['-l']);
+
+		terminal.sendText(`dotnet tt ${path.basename(uri.fsPath)}`);
+		if(f==null)
+		{terminal.show();}
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('terminalTest.show', () => {
 		if (ensureTerminalExists()) {
@@ -34,12 +56,15 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 		}
 	}));
- //https://github.com/microsoft/vscode-extension-samples/blob/master/terminal-sample/src/extension.ts
+	//https://github.com/microsoft/vscode-extension-samples/blob/master/terminal-sample/src/extension.ts
 	context.subscriptions.push(disposable);
 }
 
+interface TerminalQuickPickItem extends vscode.QuickPickItem {
+	terminal: vscode.Terminal;
+}
 // this method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }
 function colorText(text: string): string {
 	let output = '';
 	let colorIndex = 1;
