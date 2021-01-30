@@ -8,6 +8,10 @@ Compatible with **.NET 5 & .NET Core 3.1**
 
 https://www.nuget.org/packages/TextTemplating.Tool/
 
+VSCODE Extension
+
+https://marketplace.visualstudio.com/items?itemName=jacknq.TextTemplating
+
 .NET Core 3 sdk introduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
 
 
