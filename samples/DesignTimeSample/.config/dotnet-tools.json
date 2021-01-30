@@ -3,7 +3,7 @@
   "isRoot": true,
   "tools": {
     "texttemplating.tool": {
-      "version": "5.0.1.16",
+      "version": "5.0.1.17",
       "commands": [
         "tt"
       ]
