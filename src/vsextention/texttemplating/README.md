@@ -19,12 +19,12 @@ Generate **any** text, **any** code or script template, **any** language from yo
 ## Requirements
  1) Install .NET Core SDK 3.1+ or higher  https://dotnet.microsoft.com/download/dotnet-core
  2) Install textemplating tool 
- ###### Install locally
+ ### Install locally - inside project folder
 ```
 dotnet tool install TextTemplating.Tool
 ```
 
-##### or Install globally 
+#### or Install globally 
 ```
 dotnet tool install --global TextTemplating.Tool
 ```
