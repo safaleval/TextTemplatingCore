@@ -51,7 +51,7 @@ dotnet new tool-manifest
 dotnet tool install TextTemplating.Tool
 ```
 
-### Install globally 
+### OR Install globally 
 ```
 dotnet tool install --global TextTemplating.Tool
 ```
