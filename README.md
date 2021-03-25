@@ -2,10 +2,12 @@
 
 
 
-**T4**  and **CSX** scripts using .net cli command for design time  transformation and possibility to use engine class for runtime .tt transformation.
+**T4**  and new implemented **CSX** scripts using .net cli command for design time  transformation and possibility to use engine class for runtime .tt transformation.
 One of the very few tools that supports reflection and web projects!
 Compatible with **.NET 5 & .NET Core 3.1**
+Better alernative for comandline or poweshell, executing from there. Usable on any operating system with .net core.
 
+Nuget, commandline and powershell
 https://www.nuget.org/packages/TextTemplating.Tool/
 
 VSCODE Extension
@@ -49,7 +51,7 @@ dotnet new tool-manifest
 dotnet tool install TextTemplating.Tool
 ```
 
-### Install globally 
+### OR Install globally 
 ```
 dotnet tool install --global TextTemplating.Tool
 ```
