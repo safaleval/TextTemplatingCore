@@ -5,6 +5,7 @@
         <PackageId>DesignTimeSample</PackageId>
         <OutputType>Exe</OutputType>
     </PropertyGroup>
+    <ItemGroup> <Reference Include="netstandard" /> </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     </ItemGroup>

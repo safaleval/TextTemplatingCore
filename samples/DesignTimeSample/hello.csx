@@ -6,6 +6,7 @@ using System.Reflection;
 using TextTemplating;
 using Newtonsoft.Json;
 using DesignTimeSample;
+
 //referenced namespace usage
 ttConsole.WriteHighlighted("somethin");
 var helloWorld = "Hello world!";
