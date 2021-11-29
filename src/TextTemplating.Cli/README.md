@@ -6,6 +6,10 @@ dotnet build
 ### how to create .net cli tool 
 [https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create)
 
+### set api key / i.e. download latest nuget manually
+-- https://www.nuget.org/downloads 
+nuget.exe setapikey abcd 
+
 ### pack with dependencies, build doesnt do it correcly!
 dotnet pack
 ### push to nuget and add your api key 
