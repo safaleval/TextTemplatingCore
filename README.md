@@ -7,6 +7,8 @@ One of the very few tools that supports reflection and web projects!
 Compatible with **.NET 5 & .NET Core 3.1**
 Better alernative for comandline or poweshell, executing from there. Usable on any operating system with .net core.
 
+**IF** You have template from regular .net you need to adapt it for .net core, it doesnt work rightaway.. you ll get strange errors, start with simple template that works and modify it. This is the right way.
+
 Nuget, commandline and powershell
 https://www.nuget.org/packages/TextTemplating.Tool/
 
