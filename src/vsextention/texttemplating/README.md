@@ -1,6 +1,6 @@
 # TextTemplating 
 
-**T4**  and **CSX**  (C# script, cs script)  from vscode via .net cli command - design time  transformation and possibility to use engine class for runtime transformation.
+ **CSX**  (C# script, cs script) and T4  from vscode via .net cli command - design time  transformation and possibility to use engine class for runtime transformation.
 
 **Execute from context menu from VSCode!**
 
@@ -39,8 +39,9 @@ Add nuget package to csproj, if used with cs project
 ### Usage 
 transform template on the fly
 ```
-dotnet tt Person.tt
 dotnet tt hello.csx
+dotnet tt Person.tt
+
 
  or 
  
