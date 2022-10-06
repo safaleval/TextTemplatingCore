@@ -14,7 +14,7 @@ Scaffolding for .NET Core without IDE. Command line tool and designtime transfor
 
 ## Features
 
-Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
+Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... very useful stuff! See DesignTimeSample etc.
 
 ![features](https://raw.githubusercontent.com/Jacknq/TextTemplatingCore/master/src/vsextention/texttemplating/images/vscontextt.png)
 
