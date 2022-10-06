@@ -5,7 +5,7 @@
 **Execute from context menu from VSCode!**
 
 One of the very few tools that supports reflection and **web** projects!
-Compatible with **.NET 5 & .NET Core 3.1**  cs projects
+Compatible with **.NET 6 & .NET Core 3.1**  cs projects
 
 Scaffolding for .NET Core without IDE. Command line tool and designtime transformation tool, based on roslyn, **no mono or 3rdparty dependencies**.
 
