@@ -19,7 +19,7 @@ https://marketplace.visualstudio.com/items?itemName=jacknq.TextTemplating
 
 
 ### Why the hell, what do i do with T4 or CSX?
-Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
+Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... very useful stuff! See DesignTimeSample etc.
 
 ### Usage 
 transform template on the fly
