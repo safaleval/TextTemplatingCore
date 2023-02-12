@@ -6,7 +6,7 @@
     <Description>Latest version supports .netcore 7.0, 6.0
 
 	CSX and T4 scaffolding for .NET Core without IDE, 
-    transform .tt files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
+    execute or transform .csx or .tt files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
     One of the very few that supports webprojects with dll reflection!
 
     usage: "dotnet tt -h"
