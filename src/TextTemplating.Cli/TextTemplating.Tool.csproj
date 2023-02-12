@@ -1,12 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-  <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
-    <Version>5.0.1.19</Version>
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp3.1;net6.0;net7.0</TargetFrameworks>
+		<Version>5.0.1.24</Version>
     <Authors>Jacknq</Authors>
-    <Description>T4 and CSX (C# script) scaffolding for .NET Core without IDE, T4 support for .net core , 
-    transform .tt  and .csx files from your command line or runtime, based on roslyn, no 3rdparty dependencies. 
-    One of the very few tools that supports custom namespace, nuget, reflection and web projects!
-    usage: "dotnet tt -h"</Description>
+    <Description>Latest version supports .netcore 7.0, 6.0
+
+	CSX and T4 scaffolding for .NET Core without IDE, 
+    transform .tt files from your command line or runtime, based on roslyn, no 3rdparty dependencies.
+    One of the very few that supports webprojects with dll reflection!
+
+    usage: "dotnet tt -h"
+           "dotnet tt file.csx"
+
+T4 and CSX scaffolding for .NET Core without IDE, Library for TextTemplating.Tool package and runtime
+
+Requires
+ 
+<PackageReference Include="TextTemplating.Core" Version="5.0.0" /> 
+ 
+Using tool? great! leave me star or feedback on github
+
+VSCODE Extension
+
+[https://marketplace.visualstudio.com/items?itemName=jacknq.TextTemplating]</Description>
     <PackageTags>T4;TextTemplating;Core;tt;csx;dotnet</PackageTags>
     <OutputType>Exe</OutputType>
     <AssemblyName>TextTemplating.Tool</AssemblyName>
@@ -31,20 +47,19 @@
     <EmbeddedResource Include="Resources\*" />
   </ItemGroup>
   <ItemGroup>
-
-  <!-- <PackageReference Include="TextTemplating.Core" Version="5.0.0.0" /> -->
-    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.0.1" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.0.1" />
-    <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-    
-   
-    <!-- <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="3.8.0" />
-   
-    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" /> -->
-  </ItemGroup>
-  <ItemGroup>
+		<!-- <PackageReference Include="TextTemplating.Core" Version="5.0.0.0" /> -->
+		<PackageReference Include="Microsoft.CodeAnalysis" Version="4.4.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.4.0" />
+		<PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+		<!--
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="3.8.0" />
+		
+		<PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+		-->
+	</ItemGroup>
+	 <ItemGroup>
     <ProjectReference Include="..\TextTemplating\TextTemplating.csproj" PrivateAssets="All">
     <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
      <IncludeAssets>TextTemplating.Core.dll</IncludeAssets>
