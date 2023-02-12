@@ -4,6 +4,7 @@
         <AssemblyName>DesignTimeSample</AssemblyName>
         <PackageId>DesignTimeSample</PackageId>
         <OutputType>Exe</OutputType>
+        <RestoreAdditionalProjectSources>./../../src/texttemplating.cli/nupkg</RestoreAdditionalProjectSources>
     </PropertyGroup>
     <ItemGroup> <Reference Include="netstandard" /> </ItemGroup>
     <ItemGroup>
@@ -11,7 +12,7 @@
     </ItemGroup>
    
     <ItemGroup>
-      <ProjectReference Include="..\..\src\TextTemplating\TextTemplating.csproj" />
-      
+      <!-- <ProjectReference Include="..\..\src\TextTemplating\TextTemplating.csproj" /> -->
+       <PackageReference Include="TextTemplating.Core" Version="5.0.*" /> 
     </ItemGroup>
 </Project>
