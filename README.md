@@ -18,8 +18,8 @@ https://marketplace.visualstudio.com/items?itemName=jacknq.TextTemplating
 .NET Core 3 sdk introduced [.NET tool - cmd line utilites for .net](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
 
 
-### Why the hell, what do i do with T4 or CSX?
-Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... veeery useful stuff! See DesignTimeSample etc.
+### Why, what do I do with T4 or CSX?
+Generate **any** text, **any** code or script template, **any** language from your domain c# code, include it in your continous integration... very useful stuff! See DesignTimeSample etc.
 
 ### Usage 
 transform template on the fly
