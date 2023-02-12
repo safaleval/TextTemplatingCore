@@ -42,6 +42,7 @@ VSCODE Extension
  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
  <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+ <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\*" />
@@ -60,9 +61,11 @@ VSCODE Extension
 		-->
 	</ItemGroup>
 	 <ItemGroup>
-    <ProjectReference Include="..\TextTemplating\TextTemplating.csproj" PrivateAssets="All">
+    <ProjectReference Include="..\TextTemplating\TextTemplating.csproj">
     <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-     <IncludeAssets>TextTemplating.Core.dll</IncludeAssets>
+      <IncludeAssets>all</IncludeAssets>
+	  <ExcludeAssets>contentFiles</ExcludeAssets>
+      <PrivateAssets>contentFiles;analyzers</PrivateAssets>
      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </ProjectReference>
     
