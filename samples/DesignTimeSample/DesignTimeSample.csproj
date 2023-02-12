@@ -9,10 +9,11 @@
     <ItemGroup> <Reference Include="netstandard" /> </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+         <PackageReference Include="TextTemplating.Core" Version="5.0.*" /> 
     </ItemGroup>
    
     <ItemGroup>
       <!-- <ProjectReference Include="..\..\src\TextTemplating\TextTemplating.csproj" /> -->
-       <PackageReference Include="TextTemplating.Core" Version="5.0.*" /> 
+      
     </ItemGroup>
 </Project>

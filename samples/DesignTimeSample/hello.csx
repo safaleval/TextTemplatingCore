@@ -1,4 +1,5 @@
 //#r "Newtonsoft.Json"
+//#r "TextTemplating.Tool"
 using System.Diagnostics;
 using System;
 using System.Linq;
