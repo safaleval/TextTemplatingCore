@@ -3,7 +3,7 @@
 
  **CSX** and **T4** scripts using .net cli command for design time  transformation and possibility to use engine class for runtime .tt transformation.
 One of the very few tools that supports reflection and web projects!
-Compatible with **.NET 6 to .NET Core 3.1**
+Compatible with **.NET 7 to .NET Core 3.1**
 Better alernative for comandline or poweshell, executing from there. Usable on any operating system with .net core.
 
 **IF** You have template from regular .net you need to adapt it for .net core, it doesnt work rightaway.. you ll get strange errors, start with simple template that works and modify it. This is the right way.
