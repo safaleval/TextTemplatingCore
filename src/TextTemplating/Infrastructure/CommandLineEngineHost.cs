@@ -77,7 +77,10 @@ namespace TextTemplating.Infrastructure
                 return File.ReadAllText(fileName);
             }
 
-            return File.ReadAllText(Path.Combine(Path.GetDirectoryName(TemplateFilePath), fileName));
+            if(string.IsNullOrWhiteSpace(TemplateFilePath))
+                return File.ReadAllText(Path.Combine(Environment.CurrentDirectory, fileName));
+            else
+                return File.ReadAllText(Path.Combine(Path.GetDirectoryName(TemplateFilePath), fileName));
         }
 
         public string ResolvePath(string path)
